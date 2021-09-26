@@ -6,7 +6,7 @@ const departure_mob = document.getElementById("departure-mob");
 const arrival_mob = document.getElementById("arrival-mob");
 
 $(function getarrival() {
-  $.getJSON("http://localhost:8008/departure", function (data) {
+  $.getJSON("https://wadiia-backend.herokuapp.com/departure", function (data) {
     let autoComplete = [];
     for (var i = 0, len = data.length; i < len; i++) {
       data[i].value && autoComplete.push(data[i].value);
@@ -20,7 +20,7 @@ $(function getarrival() {
 });
 
 $(function getarrival() {
-  $.getJSON("http://localhost:8008/arrival", function (data) {
+  $.getJSON("https://wadiia-backend.herokuapp.com/arrival", function (data) {
     let autoComplete = [];
     for (var i = 0, len = data.length; i < len; i++) {
       data[i].value && autoComplete.push(data[i].value);
@@ -69,7 +69,7 @@ $(function () {
 
 const getcms = async (data) => {
   console.log(data, "cms");
-  const response = await fetch("http://localhost:8008/route", {
+  const response = await fetch("https://wadiia-backend.herokuapp.com/route", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -110,7 +110,7 @@ const getcms = async (data) => {
 //MOB
 const getcmsmob = async (data) => {
   console.log(data, "cms");
-  const response = await fetch("http://localhost:8008/route", {
+  const response = await fetch("https://wadiia-backend.herokuapp.com/route", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
