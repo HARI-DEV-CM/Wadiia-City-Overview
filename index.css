@@ -451,10 +451,10 @@ input[type="submit"] {
 }
 .inputField input,
 .inputField span {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -707,14 +707,14 @@ input[type="submit"] {
     box-sizing: border-box;
   }
   input[type="number"] {
-    padding-left: 73px;
+    padding-left: 71px;
     outline: none;
     height: 48.98px;
     padding-bottom: 0;
   }
 
   input[type="text"] {
-    padding-left: 73px;
+    padding-left: 71px;
     outline: none;
     padding-bottom: 0;
   }
@@ -1861,9 +1861,13 @@ input[type="submit"] {
   width: 50%;
   padding: 20px 50px;
 }
+.wad-airlines-column h3{
+  font-size: 20px;
+
+}
 hr.wad-line {
   border-top: 3px solid #0c6aec !important;
-  margin: 36px 0;
+  margin: 25px 0;
 }
 .wad-search-button {
   background-color: red;
