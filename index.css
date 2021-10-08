@@ -233,6 +233,9 @@ select.account {
   justify-content: center;
   align-items: center;
 }
+.wad-pageroutes h1{
+  margin:22px 0;
+}
 
 .wad-pageroutes h2 {
   color: #336699;
@@ -403,12 +406,15 @@ select.account {
 .menu li {
   margin-top: 7rem;
   padding: 1rem;
-  text-align: center;
 }
 .menu li a {
   text-decoration: none;
   display: block;
   font-size: 35px;
+}
+.menu object{
+  margin-bottom: -10px;
+  padding-right: 10px;
 }
 
 .close {
@@ -823,12 +829,16 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 20px;
+  }
+
+  menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -1104,12 +1114,15 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 20px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -1210,6 +1223,7 @@ input[type="submit"] {
   .wad-search-flight-btn {
     margin-left: 12px;
     /* margin-right: 14px; */
+    margin-top: 5px;
   }
 
   .wad-form-details > div > p > object {
@@ -1279,12 +1293,15 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 15px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -2406,12 +2423,13 @@ input[type="submit"] {
   .wd-common-white-card{
     height: auto;
     margin: 0 0 16px !important;
+    padding: 24px 0;
   }
 }
 
 @media screen and (max-width: 768px){
   .wd-common-white-card object {
-    width: 50%;
+    width: 30%;
   }
   .wd-common-white-card{
     margin: 0;
@@ -3013,6 +3031,12 @@ input[type="submit"] {
   .wad-ipad-footer5 {
     margin-top: 102px;
   }
+  .subscribebox_input{
+    padding-left: 24px !important;
+    padding-bottom: 12px !important;
+    width: 85% !important;
+
+  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 1001px) {
@@ -3109,6 +3133,10 @@ input[type="submit"] {
   }
   .subscribebox_input {
     padding-left: 20px !important;
+    padding-bottom: 12px !important;
+  }
+  .wad-footer-logo-content p{
+    font-size: 14px;
   }
 }
 
@@ -3131,6 +3159,9 @@ input[type="submit"] {
 
   .footer-logos-deals-details-mob {
     display: flex;
+  }
+  .wad-footer-logo-content p{
+    font-size: 16px;
   }
 }
 
