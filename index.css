@@ -525,7 +525,7 @@ input[type="submit"] {
   background-color: red;
   border: none;
   padding: 14px 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-align: center;
   color: white;
   align-items: center;
@@ -1230,6 +1230,7 @@ input[type="submit"] {
   font-size: 15px;
   margin: -4px 2px 0px 2px;
   cursor: pointer;
+  border-radius: 6px;
 }
 .wad-logo-table-second-para {
     margin-bottom: 14px !important;
