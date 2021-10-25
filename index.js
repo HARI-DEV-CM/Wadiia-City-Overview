@@ -114,28 +114,25 @@ $(function () {
     if ($(this).val() == "One-Way") {
       document.getElementById("arrival-div").classList.add("wad-desktop-oneway-arr");
       var third_row_input = document.getElementsByClassName("wad-third-row-input");
-      for(var i = 0; i < third_row_input.length; i++)
-      {
-          third_row_input[i].classList.add('wad-desktop-oneway-dep');
-          console.log(third_row_input[i].className);
+      for (var i = 0; i < third_row_input.length; i++) {
+        third_row_input[i].classList.add('wad-desktop-oneway-dep');
+        console.log(third_row_input[i].className);
       }
       trip = "One-Way";
     } else if ($(this).val() == "Round-Trip") {
       document.getElementById("arrival-div").classList.remove("wad-desktop-oneway-arr");
       var third_row_input = document.getElementsByClassName("wad-third-row-input");
-      for(var i = 0; i < third_row_input.length; i++)
-      {
-          third_row_input[i].classList.remove('wad-desktop-oneway-dep');
-          console.log(third_row_input[i].className);
+      for (var i = 0; i < third_row_input.length; i++) {
+        third_row_input[i].classList.remove('wad-desktop-oneway-dep');
+        console.log(third_row_input[i].className);
       }
       trip = "Round-Trip";
     } else {
       document.getElementById("arrival-div").classList.remove("wad-desktop-oneway-arr");
       var third_row_input = document.getElementsByClassName("wad-third-row-input");
-      for(var i = 0; i < third_row_input.length; i++)
-      {
-          third_row_input[i].classList.remove('wad-desktop-oneway-dep');
-          console.log(third_row_input[i].className);
+      for (var i = 0; i < third_row_input.length; i++) {
+        third_row_input[i].classList.remove('wad-desktop-oneway-dep');
+        console.log(third_row_input[i].className);
       }
       trip = "Multi-Trip";
     }
@@ -181,21 +178,21 @@ function redirectURL() {
   var journeyclass = document.getElementById("class").value;
 
   window.open(
-    "../../flights/" +
-      "?trip=" +
-      trip +
-      "&sourceCity=" +
-      departure +
-      "&destinationCity=" +
-      arrival +
-      "&fromDate=" +
-      fromdate +
-      "&toDate=" +
-      todate +
-      "&travellers=" +
-      traveller +
-      "&class=" +
-      journeyclass
+    "../../flight-listing" +
+    "?fromDate=" +
+    fromdate +
+    "&toDate=" +
+    todate +
+    "&fromLocation=" +
+    departure +
+    "&toLocation=" +
+    arrival +
+    "&passanger=" +
+    traveller +
+    "&serviceClass=" +
+    journeyclass +
+    "&tripType=" +
+    trip
   );
 
   return false;
