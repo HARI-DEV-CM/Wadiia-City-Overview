@@ -1623,6 +1623,14 @@ input[type="submit"] {
 /* Top Mango Route Section Ends */
 
 /* Menu Table Starts */
+.wad-card-title{
+  padding: 5px;
+  font-size: 20px;
+  width: fit-content;
+  font-weight: 500;
+  margin-bottom: 36.5px;
+  margin-left: 2.2rem;
+}
 .wad-cards-buttons {
   margin: 50px 85px 50px 85px;
   background-color: #f6f9fe;
